@@ -238,5 +238,5 @@ def create_train_data(data_dir,config):
 if __name__=="__main__":
     import basic_model
     config=basic_model.config()
-    create_train_data("/home/data/aoshuo/dnlu_4/corpora/text/zh-cn/faq/train/super_checked",config)
+    create_train_data("./raw_data",config)
             
