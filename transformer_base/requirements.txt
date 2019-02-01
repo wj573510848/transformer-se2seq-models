@@ -1,0 +1,3 @@
+nltk
+pkuseg=0.0.13
+tensorflow=1.11
