@@ -17,3 +17,4 @@ transformer模型是由Google团队在论文:“ [attention is all your need](ht
 因此，我建立了三种机器人聊天模型，分别使用了三种模型，用于探索transformer模型与传统的rnn模型之间的优劣。
 
 ### transformer-based-chatbot
+[第一个模型](./transformer_base)
