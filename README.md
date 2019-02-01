@@ -29,3 +29,14 @@ transformer模型是由Google团队在论文:“ [attention is all your need](ht
 原始trasformer的复杂度为:```n*n*d+n*d*d```</br>
 aan模型的复杂度为:```n*d*d```</br>
 其中n:句子长度，d：hidden_size，句子越长，优势越明显
+
+结构对比:
+<p align="center">
+<img width="40%" src="./tmp/base.png" />
+<br>
+图1 [transformer-base](https://arxiv.org/pdf/1706.03762.pdf)
+
+<p align="center">
+<img width="40%" src="./tmp/aan.png" />
+<br>
+图2 [transformer-aan](https://arxiv.org/pdf/1805.00631.pdf)
