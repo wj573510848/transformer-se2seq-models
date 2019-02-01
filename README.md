@@ -18,5 +18,14 @@ transformer模型是由Google团队在论文:“ [attention is all your need](ht
 
 ### transformer-based-chatbot
 [第一个模型](./transformer_base)
-使用[attention is all your need](https://arxiv.org/pdf/1706.03762.pdf)提出的模型，建立机器人聊天模型。
+使用[attention is all your need](https://arxiv.org/pdf/1706.03762.pdf)提出的模型，建立机器人聊天模型。</br>
 详见 [readme](./transformer_base/readme.txt)
+
+### transformer-aan-chatbot
+
+原始的tansformer模型支持并行化计算，训练速度较快。但是decoder过程速度较慢。</br>
+因此，论文 [Accelerating Neural Transformer via an Average Attention Network](https://arxiv.org/pdf/1805.00631.pdf),提出了一种Average Attention network用以提升transformer的解码速度。</br>
+[ann-model](./transformer_aan)中我改写了decoder模型的self-attention部分，将其替换成了aan(Average Attention Network) layer.</br>
+原始trasformer的复杂度为:```n*n*d+n*d*d```</br>
+aan模型的复杂度为:```n*d*d```</br>
+其中n:句子长度，d：hidden_size，句子越长，优势越明显

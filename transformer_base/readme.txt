@@ -27,12 +27,4 @@ python3 release.py
 3.test
 python3 test.py
 
-4. aan
-原始的tansformer模型支持并行化计算，训练速度较快。但是decoder过程速度较慢。
-因此，参考论文 Accelerating Neural Transformer via an Average Attention Network
-将decoder的self attention层替换为论文中提出的 Average Attention Layer,在准确率影响较小的情况下提升decoder速度。
-原始trasformer的复杂度:n*n*d+n*d*d
-ann:n*d*d
-n:句子长度，d：hidden_size
-句子越长，优势越明显
 
