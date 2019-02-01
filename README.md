@@ -18,3 +18,5 @@ transformer模型是由Google团队在论文:“ [attention is all your need](ht
 
 ### transformer-based-chatbot
 [第一个模型](./transformer_base)
+使用[attention is all your need](https://arxiv.org/pdf/1706.03762.pdf)提出的模型，建立机器人聊天模型。
+详见 [readme](./transformer_base/readme.txt)
