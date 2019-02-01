@@ -40,3 +40,19 @@ aan模型的复杂度为:```n*d*d```</br>
 <img width="40%" src="./tmp/aan.png" />
 <br>
 图2 [transformer-aan](https://arxiv.org/pdf/1805.00631.pdf)
+
+### seq2seq模型
+
+transformer模型的在并行化训练上的优势很大，在解码上始终较慢，特别是在应用beam search的时候，每个step都要全网络更新一次。传统RNN的递归计算方式，在解码的时候反而有较大的速度优势。</br>
+该模型使用基于lstm-attention的seq2seq模型，模型架构如下:
+
+<p align="center">
+<img width="70%" src="./tmp/seq2seq.png" />
+<br>
+图3 seq2seq 网络结构
+
+模型主要特点:
+
+* 使用Bi-lstm捕获双向语义
+* encoder-decoder单向lstm的每层state都传输，结合了不同神经网络层所表达的语义
+* 使用了attention连接
